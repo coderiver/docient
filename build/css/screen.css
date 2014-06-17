@@ -77,6 +77,20 @@ a:hover { color: #135388; }
 .userdetails .userdetails__row { margin-bottom: 40px; }
 @media only screen and (max-width: 999px) { .userdetails .userdetails__row .color-button { margin-top: 10px; } }
 
+.submiticon { position: absolute; top: -19px; right: 0; bottom: -16px; width: 55px; background-color: #ffb300; -webkit-border-radius: 0 15px 15px 0; -moz-border-radius: 0 15px 15px 0; -ms-border-radius: 0 15px 15px 0; -o-border-radius: 0 15px 15px 0; border-radius: 0 15px 15px 0; border: none; padding: 0; font-size: 20px; color: #2f2f2f; text-align: center; -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.66), inset 0 1px 0 rgba(255, 255, 255, 0.75); -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.66), inset 0 1px 0 rgba(255, 255, 255, 0.75); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.66), inset 0 1px 0 rgba(255, 255, 255, 0.75); }
+@media only screen and (max-width: 999px) { .submiticon { top: -3px; bottom: 0; } }
+.submiticon .fa { position: relative !important; right: auto !important; top: 2px !important; font-size: 20px !important; color: #2f2f2f !important; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.63); }
+
+.messages { margin-left: 20px; }
+@media only screen and (max-width: 479px) { .messages { margin-left: 0; } }
+.messages .message { margin-top: 30px; }
+.messages .message.message_sent .fa-comment { display: none; }
+.messages .message.message_sent .message__meta { color: #959595; }
+.messages .message.message_inbox .fa-comment-o { display: none; }
+.messages .message.message_first .message__text { font-weight: bold; }
+.messages .message__meta { margin-bottom: 10px; }
+.messages .message__meta .fa { padding-right: 5px; }
+
 .text-left { text-align: left; }
 
 .text-right { text-align: right; }
@@ -208,6 +222,7 @@ textarea.textbox { height: 86px; padding: 15px 15px; resize: vertical; overflow:
 .textbox.type-2 { background: white; background: rgba(255, 255, 255, 0.8); height: 50px; -webkit-border-radius: 15px; border-radius: 15px; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.75), inset 0 -1px 0 white; border: none; }
 
 .icon-field { position: relative; }
+.icon-field.icon-field_mod .textbox { padding-right: 70px; }
 .icon-field .textbox { padding-right: 35px; }
 .icon-field .fa { position: absolute; top: 0; right: 12px; font-size: 16px; color: #4c4c4c; border: none; background: none; outline: none; margin: 0; padding: 0; }
 .icon-field button { cursor: pointer; }

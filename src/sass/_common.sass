@@ -202,6 +202,52 @@ a
 			+r(w999)
 				margin-top: 10px
 
+.submiticon
+	position: absolute
+	top: -19px
+	right: 0
+	bottom: -16px
+	width: 55px
+	background-color: #ffb300
+	+border-radius(0 15px 15px 0)
+	border: none
+	padding: 0
+	font-size: 20px
+	color: #2f2f2f
+	text-align: center
+	@include box-shadow(0 1px 3px rgba(0,0,0,.66), inset 0 1px 0 rgba(255,255,255,.75))
+	+r(w999)
+		top: -3px
+		bottom: 0
+	.fa
+		position: relative !important
+		right: auto !important
+		top: 2px !important
+		font-size: 20px !important
+		color: #2f2f2f !important
+		@include text-shadow(0 1px 0 rgba(255,255,255,.63))
+
+.messages
+	margin-left: 20px
+	+r(w479)
+		margin-left: 0
+	.message
+		margin-top: 30px
+		&.message_sent
+			.fa-comment
+				display: none
+			.message__meta
+				color: #959595
+		&.message_inbox
+			.fa-comment-o
+				display: none
+		&.message_first
+			.message__text
+				font-weight: bold
+	.message__meta
+		margin-bottom: 10px
+		.fa
+			padding-right: 5px
 
 //*************
 //*	HELPERS
@@ -460,6 +506,9 @@ textarea.textbox
 
 .icon-field
 	position: relative
+	&.icon-field_mod
+		.textbox
+			padding-right: 70px
 	.textbox
 		padding-right: 35px
 	.fa
