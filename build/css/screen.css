@@ -55,6 +55,8 @@ a:hover { color: #135388; }
 .content table th { background: #fcfcfc; font-size: 14px; text-align: center; }
 .content table td { vertical-align: top; }
 
+.newsurvey-btn { margin-top: 2px; margin-bottom: 20px; }
+
 .text-left { text-align: left; }
 
 .text-right { text-align: right; }
@@ -201,6 +203,7 @@ textarea.textbox { height: 86px; padding: 15px 15px; resize: vertical; overflow:
 .color-button:hover { background: #4a81ad; color: white; }
 .color-button:active { background: #2a618d; transition: none; }
 .color-button.bigger { height: 58px; line-height: 58px; }
+.color-button.large { font-size: 18px; height: 48px; line-height: 48px; }
 .color-button.lblue { background: #5cb7e0; }
 .color-button.lblue:hover { background: #6cc7f0; }
 .color-button.lblue:active { background: #4ca7d0; }
@@ -210,6 +213,7 @@ textarea.textbox { height: 86px; padding: 15px 15px; resize: vertical; overflow:
 .color-button.lpurple { background: #cf6fb7; }
 .color-button.lpurple:hover { background: #df7fc7; }
 .color-button.lpurple:active { background: #bf5fa7; }
+.color-button.shadow { -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.66); -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.66); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.66); }
 
 .center-brow { text-align: center; margin: 15px 0; }
 
@@ -301,6 +305,7 @@ textarea.textbox { height: 86px; padding: 15px 15px; resize: vertical; overflow:
 .options-list li:first-child { border-top: 1px solid #efefef; }
 
 .page-title-rblock { float: right; padding: 20px 0 0 0; }
+.page-title-rblock.page-title-rblock_mod { padding: 0; }
 
 .color-picker { display: inline-block; width: 148px; height: 48px; border: 1px solid #d7d7d7; border-radius: 15px; }
 

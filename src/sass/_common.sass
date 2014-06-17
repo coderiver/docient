@@ -140,6 +140,10 @@ a
 		td
 			vertical-align: top
 
+.newsurvey-btn
+	margin-top: 2px
+	margin-bottom: 20px
+
 //*************
 //*	HELPERS
 //***************
@@ -469,6 +473,10 @@ textarea.textbox
 	&.bigger
 		height: 58px
 		line-height: 58px
+	&.large
+		font-size: 18px
+		height: 48px
+		line-height: 48px
 	&.lblue
 		background: #5cb7e0
 		&:hover
@@ -487,6 +495,8 @@ textarea.textbox
 			background: #df7fc7
 		&:active
 			background: #bf5fa7
+	&.shadow
+		+box-shadow(0 1px 3px rgba(0,0,0,.66))
 
 .center-brow
 	text-align: center
@@ -808,6 +818,8 @@ textarea.textbox
 .page-title-rblock
 	float: right
 	padding: 20px 0 0 0
+	&.page-title-rblock_mod
+		padding: 0
 
 // color-picker
 
