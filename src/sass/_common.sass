@@ -142,7 +142,37 @@ a
 
 .newsurvey-btn
 	margin-top: 2px
-	margin-bottom: 20px
+	margin-bottom: 15px
+
+.questiontype
+	.questiontype__item
+		display: inline-block
+		vertical-align: top
+		margin-left: 30px
+		+r(w479)
+			display: block
+			margin-left: 0
+			margin-top: 5px
+			&:first-child
+				margin-top: 0
+		&:first-child
+			margin-left: 0
+
+.btngroup
+	+clr
+	max-width: 710px
+	+r(w999)
+		max-width: 100%
+		text-align: center
+	.def-button
+		float: right
+		+r(w999)
+			float: none
+			margin-bottom: 10px
+		&:first-child
+			float: left
+			+r(w999)
+				float: none
 
 //*************
 //*	HELPERS
@@ -435,6 +465,7 @@ textarea.textbox
 	-webkit-border-radius: 15px
 	border-radius: 15px
 	transition: background 150ms linear
+	+font-smoothing
 
 // def-button
 
@@ -452,6 +483,16 @@ textarea.textbox
 	&:active
 		background: #ffa400
 		transition: none
+	&.blue
+		background: #54b8dc
+		color: #fff
+		text-shadow: none
+		&:hover
+			background: #6cc7f0
+			color: #fff
+		&:active
+			background: #4ca7d0
+			color: #fff
 	> .fa
 		font-size: 15px
 		height: 18px

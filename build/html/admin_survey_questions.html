@@ -132,80 +132,32 @@
 				
 				<div id="main-inner">
 					<div class="overflow">
-						<div class="page-title-rblock page-title-rblock_mod">
-							<a href="#" class="newsurvey-btn def-button blue"><i class="fa fa-save pad-r10"></i>New survey</a>
-						</div>
-						<h1>Your surveys</h1>
+						<h1>Defining questions</h1>
 					</div>
+					<p>#1 Question Text:</p>
+					<p><input type="text" class="textbox" placeholder="Enter text here..." style="width:678px;"></p>
 
-					<table class="users-table">
-						<tr>
-							<th><a href="#">Survey title<i class="fa fa-sort-amount-asc"></i></a></th>
-							<th><a href="#">Category</a></th>
-							<th><a href="#">Created</a></th>
-							<th><a href="#">Questions</a></th>
-							<th><a href="#">Tools</a></th>
-						</tr>
-						<tr>
-							<td><a href="#">Survey for my patients</a></td>
-							<td>Surgery / ...</td>
-							<td>21.12.2013</td>
-							<td>20</td>
-							<td><a href="#" class="pad-r5"><i class="fa fa-copy"></i></a> <a href="#" class="pad-r5"><i class="fa fa-pencil"></i></a> <a href="#" class="pad-r5"><i class="fa fa-trash-o"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td><a href="#">Test survey surgery</a></td>
-							<td>Tooth health / ...</td>
-							<td>02.12.2013</td>
-							<td>23</td>
-							<td><a href="#" class="pad-r5"><i class="fa fa-copy"></i></a> <a href="#" class="pad-r5"><i class="fa fa-pencil"></i></a> <a href="#" class="pad-r5"><i class="fa fa-trash-o"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td><a href="#">Reanimation survey</a></td>
-							<td>Reanimation / ...</td>
-							<td>31.11.2013</td>
-							<td>83</td>
-							<td><a href="#" class="pad-r5"><i class="fa fa-copy"></i></a> <a href="#" class="pad-r5"><i class="fa fa-pencil"></i></a> <a href="#" class="pad-r5"><i class="fa fa-trash-o"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td><a href="#">Common questions</a></td>
-							<td>Fucking people / ...</td>
-							<td>17.11.2013</td>
-							<td>5</td>
-							<td><a href="#" class="pad-r5"><i class="fa fa-copy"></i></a> <a href="#" class="pad-r5"><i class="fa fa-pencil"></i></a> <a href="#" class="pad-r5"><i class="fa fa-trash-o"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td><a href="#">Test survey surgery</a></td>
-							<td>Tooth health / ...</td>
-							<td>02.12.2013</td>
-							<td>23</td>
-							<td><a href="#" class="pad-r5"><i class="fa fa-copy"></i></a> <a href="#" class="pad-r5"><i class="fa fa-pencil"></i></a> <a href="#" class="pad-r5"><i class="fa fa-trash-o"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td><a href="#">Reanimation survey</a></td>
-							<td>Reanimation / ...</td>
-							<td>31.11.2013</td>
-							<td>83</td>
-							<td><a href="#" class="pad-r5"><i class="fa fa-copy"></i></a> <a href="#" class="pad-r5"><i class="fa fa-pencil"></i></a> <a href="#" class="pad-r5"><i class="fa fa-trash-o"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td><a href="#">Common questions</a></td>
-							<td>Fucking people / ...</td>
-							<td>17.11.2013</td>
-							<td>5</td>
-							<td><a href="#" class="pad-r5"><i class="fa fa-copy"></i></a> <a href="#" class="pad-r5"><i class="fa fa-pencil"></i></a> <a href="#" class="pad-r5"><i class="fa fa-trash-o"></i></a>
-							</td>
-						</tr>
-					</table>
-					
+					<p class="margin-t20">Question type:</p>
+					<form>
+						<div class="questiontype">
+							<div class="questiontype__item"><input type="radio" class="custom" name="test1" checked><label>Text field</label></div>
+							<div class="questiontype__item"><input type="radio" class="custom" name="test1"><label>Single option</label></div>
+							<div class="questiontype__item"><input type="radio" class="custom" name="test1"><label>Multiple options</label></div>
+						</div>
+					</form>
+
+
+					<p class="margin-t20">Answer options:</p>
+					<p>
+						<p><textarea class="textbox" style="width:678px;" placeholder="Enter each option on a separate line"></textarea></p>
+					</p>
+
+					<p class="btngroup margin-t30 margin-b20">
+						<button class="def-button blue"><i class="fa fa-arrow-circle-right pad-r10"></i>Save question and create next one</button>
+						<button type="submit" class="def-button"><i class="fa fa-save pad-r10"></i>Save survey and quit</button>
+					</p>
+
 				</div>
-				
 				<div class="clear"></div>
 			</div>
 		</div><!-- MAIN END -->

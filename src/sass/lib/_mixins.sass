@@ -20,6 +20,7 @@ $min1920: 1920px
 $w1280: 1280px
 $w1270: 1270px
 $w1024: 1024px
+$w999: 999px
 $w900: 900px
 $w860: 860px
 $w800: 800px    
@@ -27,8 +28,10 @@ $w760: 760px
 $w640: 640px
 $w560: 560px
 $w480: 480px
+$w479: 479px
 $w360: 360px
 $w320: 320px
+
 
 =r($media)
 	@if $media == w1280
@@ -39,6 +42,9 @@ $w320: 320px
 			@content
 	@if $media == w1024
 		@media only screen and (max-width: $w1024)
+			@content
+	@if $media == w999
+		@media only screen and (max-width: $w999)
 			@content
 	@if $media == w900
 		@media only screen and (max-width: $w900)
@@ -60,6 +66,9 @@ $w320: 320px
 			@content
 	@if $media == w480
 		@media only screen and (max-width: $w480)
+			@content
+	@if $media == w479
+		@media only screen and (max-width: $w479)
 			@content
 	@if $media == w360
 		@media only screen and (max-width: $w360)
