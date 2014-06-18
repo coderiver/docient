@@ -238,6 +238,22 @@ a
 	margin-left: 20px
 	+r(w479)
 		margin-left: 0
+	&.messages_mod
+		margin-left: 0
+		.message
+			margin: 0
+			padding: 20px 0 12px
+			border-top: 1px dotted #bdbdbd
+			&:first-child
+				padding: 15px 0 12px
+				border-top: none
+			&.message_unread
+				.message__meta
+					> .fa
+						color: #ffb400
+				.message__text
+					font-weight: bold
+
 	.message
 		margin-top: 30px
 		&.message_sent

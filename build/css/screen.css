@@ -85,6 +85,11 @@ a:hover { color: #135388; }
 
 .messages { margin-left: 20px; }
 @media only screen and (max-width: 479px) { .messages { margin-left: 0; } }
+.messages.messages_mod { margin-left: 0; }
+.messages.messages_mod .message { margin: 0; padding: 20px 0 12px; border-top: 1px dotted #bdbdbd; }
+.messages.messages_mod .message:first-child { padding: 15px 0 12px; border-top: none; }
+.messages.messages_mod .message.message_unread .message__meta > .fa { color: #ffb400; }
+.messages.messages_mod .message.message_unread .message__text { font-weight: bold; }
 .messages .message { margin-top: 30px; }
 .messages .message.message_sent .fa-comment { display: none; }
 .messages .message.message_sent .message__meta { color: #959595; }
