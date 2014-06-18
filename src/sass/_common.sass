@@ -216,6 +216,7 @@ a
 	color: #2f2f2f
 	text-align: center
 	@include box-shadow(0 1px 3px rgba(0,0,0,.66), inset 0 1px 0 rgba(255,255,255,.75))
+	transition: background 150ms linear
 	+r(w999)
 		top: -3px
 		bottom: 0
@@ -226,6 +227,12 @@ a
 		font-size: 20px !important
 		color: #2f2f2f !important
 		@include text-shadow(0 1px 0 rgba(255,255,255,.63))
+	&:hover
+		background: #ffc400
+		color: #252525
+	&:active
+		background: #ffa400
+		transition: none
 
 .messages
 	margin-left: 20px
@@ -439,6 +446,11 @@ input[type=date]
 		display: block
 		-webkit-appearance: none
 
+.cfe-select
+	font-weight: normal
+.cfe-select .cfe-select-title.placeholder
+	color: #959595
+
 .textbox
 	height: 48px
 	padding: 0 15px
@@ -449,6 +461,7 @@ input[type=date]
 	border-radius: 15px
 	-webkit-border-radius: 15px
 	transition: border 150ms linear
+	+placeholder-color(#959595)
 
 input.textbox
 	-webkit-appearance: none
