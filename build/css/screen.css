@@ -124,6 +124,48 @@ a:hover { color: #135388; }
 
 .custom-scroll-wrap { padding: 20px 15px; border: 1px solid #d7d7d7; -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; border-radius: 15px; }
 
+.datamed { max-width: 710px; }
+@media only screen and (max-width: 999px) { .datamed { max-width: 100%; } }
+.datamed .datamed__upload .def-button { height: 48px; line-height: 48px; padding: 0; text-align: center; }
+@media only screen and (max-width: 999px) { .datamed .datamed__upload .def-button { display: block; max-width: 345px; margin: 10px auto 0; } }
+.datamed .datamed__file { width: 345px; margin-right: 8px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+@media only screen and (max-width: 999px) { .datamed .datamed__file { margin: 5px 0; display: block; width: 100%; } }
+
+.invoice { position: relative; padding: 20px 15px; border: 1px solid #cacaca; font-size: 14px; }
+@media only screen and (max-width: 999px) { .invoice { font-size: 13px; } }
+.invoice .invoice__close { position: absolute; top: 20px; right: 15px; color: #cfcfcf; font-size: 18px; -webkit-transition: all 150ms; -moz-transition: all 150ms; -o-transition: all 150ms; transition: all 150ms; }
+.invoice .invoice__close:hover { color: #4c4c4c; }
+.invoice .invoice__title { font-size: 28px; display: table-cell; width: 50%; vertical-align: baseline; margin: 0; }
+@media only screen and (max-width: 999px) { .invoice .invoice__title { display: block; width: auto; margin-bottom: 10px; font-size: 22px; } }
+.invoice .invoice__date { font-weight: bold; display: table-cell; width: 50%; vertical-align: baseline; padding-left: 40px; }
+@media only screen and (max-width: 999px) { .invoice .invoice__date { padding-left: 0; } }
+.invoice .invoice__infocol { display: table-cell; vertical-align: top; width: 50%; padding-left: 20px; }
+@media only screen and (max-width: 999px) { .invoice .invoice__infocol { display: block; width: auto; padding-left: 0; padding-top: 10px; } }
+.invoice .invoice__infocol:first-child { padding-left: 0; padding-right: 20px; }
+@media only screen and (max-width: 999px) { .invoice .invoice__infocol:first-child { padding-right: 0; padding-top: 0; } }
+.invoice .invoice__infosub { font-weight: bold; margin-bottom: 10px; }
+.invoice .invoice__infotable td { padding: 12px 0 0; }
+@media only screen and (max-width: 999px) { .invoice .invoice__infotable td { display: block; width: 100%; padding: 6px 0 12px; } }
+.invoice .invoice__infotable td:first-child { padding-right: 15px; }
+@media only screen and (max-width: 999px) { .invoice .invoice__infotable td:first-child { padding: 0; } }
+.invoice .invoice__pricetable { width: 100%; margin-bottom: 35px; }
+.invoice .invoice__pricetable th { text-transform: uppercase; font-weight: bold; padding-bottom: 20px; padding-top: 0; }
+.invoice .invoice__pricetable th, .invoice .invoice__pricetable td { text-align: center; padding: 10px 0 0 40px; }
+@media only screen and (max-width: 999px) { .invoice .invoice__pricetable th, .invoice .invoice__pricetable td { padding: 10px 0 0 20px; } }
+@media only screen and (max-width: 479px) { .invoice .invoice__pricetable th, .invoice .invoice__pricetable td { padding: 10px 0 0 10px; } }
+.invoice .invoice__pricetable th:first-child, .invoice .invoice__pricetable td:first-child { text-align: left; padding-left: 0; }
+.invoice .inovice__pricetotal { font-weight: bold; text-transform: uppercase; }
+.invoice .inovice__pricetotal span { float: right; }
+.invoice .invoice__action { *zoom: 1; }
+.invoice .invoice__action:after { content: " "; display: table; clear: both; }
+.invoice .invoice__actionlabel { float: left; color: #4c4c4c; }
+@media only screen and (max-width: 999px) { .invoice .invoice__actionlabel { float: none; margin-bottom: 10px; } }
+.invoice .invoice__actionbtn { float: right; }
+@media only screen and (max-width: 999px) { .invoice .invoice__actionbtn { float: none; } }
+.invoice .invoice__actionbtn .fa { color: #4c4c4c; padding-right: 4px; }
+.invoice .invoice__actionbtn a { margin-left: 20px; }
+.invoice .invoice__actionbtn a:first-child { margin-left: 0; }
+
 .text-left { text-align: left; }
 
 .text-right { text-align: right; }
@@ -240,6 +282,8 @@ input[type=date]::-webkit-clear-button { display: block; -webkit-appearance: non
 .cfe-select { font-weight: normal; }
 
 .cfe-select .cfe-select-title.placeholder { color: #959595; }
+
+.cfe-file .cfe-filename.placeholder { color: #959595; font-weight: normal; }
 
 .textbox { height: 48px; padding: 0 15px; background: white; box-shadow: none; border: 1px solid #d7d7d7; outline: none; border-radius: 15px; -webkit-border-radius: 15px; transition: border 150ms linear; }
 .textbox:-moz-placeholder, .textbox::-moz-placeholder { color: #959595; opacity: 1; }
@@ -638,6 +682,9 @@ nav + #main-inner { margin-left: 200px; }
 .defining-users-table { margin: 20px 0; width: 100%; font-size: 14px; }
 .defining-users-table td { padding: 12px 15px; }
 .defining-users-table tr:nth-child(2n + 1) td { background: #f8f8f8; }
+.defining-users-table .defining-users-table__act { width: 120px; }
+.defining-users-table .defining-users-table__act .fa { color: #4c4c4c; }
+@media only screen and (max-width: 999px) { .defining-users-table .defining-users-table__act { width: auto; } }
 
 .profile-completed { line-height: 38px; font-size: 14px; }
 .profile-completed + h2 { padding-top: 6px; }

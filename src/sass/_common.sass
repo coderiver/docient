@@ -345,6 +345,151 @@ a
 	border: 1px solid #d7d7d7
 	+border-radius(15px)
 
+.datamed
+	max-width: 710px
+	+r(w999)
+		max-width: 100%
+	.datamed__upload
+		.def-button
+			height: 48px
+			line-height: 48px
+			padding: 0
+			text-align: center
+			+r(w999)
+				display: block
+				max-width: 345px
+				margin: 10px auto 0
+	.datamed__file
+		width: 345px
+		margin-right: 8px
+		+box
+		+r(w999)
+			margin: 5px 0
+			display: block
+			width: 100%
+
+.invoice
+	position: relative
+	padding: 20px 15px
+	border: 1px solid #cacaca
+	font-size: 14px
+	+r(w999)
+		font-size: 13px
+	.invoice__close
+		position: absolute
+		top: 20px
+		right: 15px
+		color: #cfcfcf
+		font-size: 18px
+		+transition(all 150ms)
+		&:hover
+			color: #4c4c4c
+	.invoice__top
+	.invoice__title
+		font-size: 28px
+		display: table-cell
+		width: 50%
+		// vertical-align: middle
+		vertical-align: baseline
+		margin: 0
+		+r(w999)
+			display: block
+			width: auto
+			margin-bottom: 10px
+			font-size: 22px
+	.invoice__date
+		font-weight: bold
+		display: table-cell
+		width: 50%
+		// vertical-align: middle
+		vertical-align: baseline
+		padding-left: 40px
+		+r(w999)
+			padding-left: 0
+	.invoice__info
+	.invoice__infocol
+		display: table-cell
+		vertical-align: top
+		width: 50%
+		padding-left: 20px
+		+r(w999)
+			display: block
+			width: auto
+			padding-left: 0
+			padding-top: 10px
+		&:first-child
+			padding-left: 0
+			padding-right: 20px
+			+r(w999)
+				padding-right: 0
+				padding-top: 0
+	.invoice__infosub
+		font-weight: bold
+		margin-bottom: 10px
+	.invoice__infotable
+		// +r(w999)
+			// table-layout: fixed
+			// width: 100%
+		td
+			padding: 12px 0 0
+			+r(w999)
+				display: block
+				width: 100%
+				padding: 6px 0 12px
+			&:first-child
+				padding-right: 15px
+				+r(w999)
+					padding: 0
+	.invoice__price
+	.invoice__pricetable
+		// table-layout: fixed
+		width: 100%
+		margin-bottom: 35px
+		th
+			text-transform: uppercase
+			font-weight: bold
+			// text-align: center
+			padding-bottom: 20px
+			padding-top: 0
+			// white-space: nowrap
+		td
+			// text-align: center
+			// padding-top: 10px
+		th, td
+			text-align: center
+			padding: 10px 0 0 40px
+			+r(w999)
+				padding: 10px 0 0 20px
+			+r(w479)
+				padding: 10px 0 0 10px
+			&:first-child
+				text-align: left
+				padding-left: 0
+				// min-width: 400px
+	.inovice__pricetotal
+		font-weight: bold
+		text-transform: uppercase
+		span
+			float: right
+	.invoice__action
+		+clr
+	.invoice__actionlabel
+		float: left
+		color: #4c4c4c
+		+r(w999)
+			float: none
+			margin-bottom: 10px
+	.invoice__actionbtn
+		float: right
+		+r(w999)
+			float: none
+		.fa
+			color: #4c4c4c
+			padding-right: 4px
+		a
+			margin-left: 20px
+			&:first-child
+				margin-left: 0
 
 //*************
 //*	HELPERS
@@ -540,6 +685,9 @@ input[type=date]
 	font-weight: normal
 .cfe-select .cfe-select-title.placeholder
 	color: #959595
+.cfe-file .cfe-filename.placeholder
+	color: #959595
+	font-weight: normal
 
 .textbox
 	height: 48px
@@ -1901,6 +2049,12 @@ nav
 		padding: 12px 15px
 	tr:nth-child(2n + 1) td
 		background: #f8f8f8
+	.defining-users-table__act
+		width: 120px
+		.fa
+			color: #4c4c4c
+		+r(w999)
+			width: auto
 
 // profile-completed
 
