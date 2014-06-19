@@ -166,6 +166,24 @@ a:hover { color: #135388; }
 .invoice .invoice__actionbtn a { margin-left: 20px; }
 .invoice .invoice__actionbtn a:first-child { margin-left: 0; }
 
+.adminhome .table-cell { vertical-align: top; padding-left: 15px; }
+@media only screen and (max-width: 999px) { .adminhome .table-cell { padding-left: 0; } }
+.adminhome .table-cell:first-child { padding-left: 0; padding-right: 15px; }
+@media only screen and (max-width: 999px) { .adminhome .table-cell:first-child { padding-right: 0; } }
+.adminhome .simple-table { width: 100%; table-layout: fixed; }
+@media only screen and (max-width: 999px) { .adminhome .simple-table td { text-align: right; } }
+.adminhome .simple-table td:first-child { width: 50%; }
+@media only screen and (max-width: 999px) { .adminhome .simple-table td:first-child { text-align: left; } }
+.adminhome .iconlink { margin-right: 20px; }
+@media only screen and (max-width: 999px) { .adminhome .iconlink { margin-right: 10px; } }
+
+.title-alt { font-size: 34px; }
+
+.overflow .iconlink { margin-top: 12px; }
+
+.iconlink { border-bottom: 1px dotted #4383b8; }
+.iconlink:hover { border-color: #135388; }
+
 .text-left { text-align: left; }
 
 .text-right { text-align: right; }

@@ -491,6 +491,45 @@ a
 			&:first-child
 				margin-left: 0
 
+.adminhome
+	.table-cell
+		vertical-align: top
+		padding-left: 15px
+		+r(w999)
+			padding-left: 0
+		&:first-child
+			padding-left: 0
+			padding-right: 15px
+			+r(w999)
+				padding-right: 0
+	.simple-table
+		width: 100%
+		table-layout: fixed
+		td
+			// font-size: 13px
+			+r(w999)
+				text-align: right
+			&:first-child
+				width: 50%
+				+r(w999)
+					text-align: left
+	.iconlink
+		margin-right: 20px
+		+r(w999)
+			margin-right: 10px
+
+.title-alt
+	font-size: 34px
+
+.overflow
+	.iconlink
+		margin-top: 12px
+
+.iconlink
+	border-bottom: 1px dotted #4383b8
+	&:hover
+		border-color: #135388
+
 //*************
 //*	HELPERS
 //***************
