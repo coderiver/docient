@@ -4,6 +4,13 @@
 
 	//ON DOC READY
 	$(document).ready(function(e) {
+
+		$('.hierarchical-list>li>span').on('click', function() {
+			$(this).siblings('.exp-but').trigger('click');
+		});
+		$('.hierarchical-list>li>ul>li>span').on('click', function() {
+			$(this).siblings('.exp-but').trigger('click');
+		});
 		
 		// CUSTOM FORM ELEMENTS
 		$("input.custom, select.custom").CFElements();
@@ -146,7 +153,8 @@
 		}
 	};
 	
-	
+	// $('.hierarchical-list>li>span').hide();
+
 	
 	
 }(jQuery));

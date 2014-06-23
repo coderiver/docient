@@ -530,6 +530,15 @@ a
 	&:hover
 		border-color: #135388
 
+.admincat
+	overflow: hidden
+	.overflow
+		h1
+			margin-bottom: 10px
+	.page-title-rblock
+		.simple
+			margin-right: 15px
+
 //*************
 //*	HELPERS
 //***************
@@ -722,6 +731,8 @@ input[type=date]
 
 .cfe-select
 	font-weight: normal
+.cfe-select select
+	-webkit-appearance: none
 .cfe-select .cfe-select-title.placeholder
 	color: #959595
 .cfe-file .cfe-filename.placeholder
@@ -887,12 +898,26 @@ textarea.textbox
 		font-size: 18px
 		height: 48px
 		line-height: 48px
+	&.small
+		font-size: 13px
+		height: 26px
+		line-height: 26px
+		padding: 0 17px
 	&.lblue
 		background: #5cb7e0
 		&:hover
 			background: #6cc7f0
 		&:active
 			background: #4ca7d0
+	&.gray
+		color: #252525
+		background: #ebebeb
+		&:hover
+			color: #252525
+			background: rgba(#ebebeb, .8)
+		&:active
+			color: #252525
+			background: rgba(#ebebeb, .6)
 	&.purple
 		background: #86246e
 		&:hover
@@ -1336,7 +1361,8 @@ li
 
 li li .exp-line
 	left: 35px
-
+	bottom: 19px
+	height: auto
 .exp-h-line
 	position: absolute
 	top: 50%
@@ -1344,6 +1370,39 @@ li li .exp-line
 	border-bottom: 1px dotted #a1a1a1
 	width: 16px
 	z-index: 998
+
+.hierarchical-list_mod
+	li li > span
+		margin-left: 30px
+	.is-editable
+		// > span
+		// 	border-bottom: 1px dotted
+		.textbox
+			height: 40px
+			width: 377px
+	.hierarchical-list__tools
+		float: right
+		margin-top: 7px
+		margin-right: 20px
+		position: relative
+		z-index: 1
+		height: 26px
+		line-height: 26px
+	.hierarchical-list__translate
+		margin: 5px 30px 0
+	.hierarchical-list__translaterow
+		padding-bottom: 5px
+		a
+			font-size: 13px
+			margin-left: 10px
+	.hierarchical-list__translatelabel
+		display: inline-block
+		width: 60px
+		font-size: 13px
+	.hierarchical-list__add
+		padding: 15px 30px
+		font-size: 13px
+		background: #fff
 
 // popup
 

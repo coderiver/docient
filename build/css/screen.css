@@ -184,6 +184,10 @@ a:hover { color: #135388; }
 .iconlink { border-bottom: 1px dotted #4383b8; }
 .iconlink:hover { border-color: #135388; }
 
+.admincat { overflow: hidden; }
+.admincat .overflow h1 { margin-bottom: 10px; }
+.admincat .page-title-rblock .simple { margin-right: 15px; }
+
 .text-left { text-align: left; }
 
 .text-right { text-align: right; }
@@ -299,6 +303,8 @@ input[type=date]::-webkit-clear-button { display: block; -webkit-appearance: non
 
 .cfe-select { font-weight: normal; }
 
+.cfe-select select { -webkit-appearance: none; }
+
 .cfe-select .cfe-select-title.placeholder { color: #959595; }
 
 .cfe-file .cfe-filename.placeholder { color: #959595; font-weight: normal; }
@@ -343,9 +349,13 @@ textarea.textbox { height: 86px; padding: 15px 15px; resize: vertical; overflow:
 .color-button:active { background: #2a618d; transition: none; }
 .color-button.bigger { height: 58px; line-height: 58px; }
 .color-button.large { font-size: 18px; height: 48px; line-height: 48px; }
+.color-button.small { font-size: 13px; height: 26px; line-height: 26px; padding: 0 17px; }
 .color-button.lblue { background: #5cb7e0; }
 .color-button.lblue:hover { background: #6cc7f0; }
 .color-button.lblue:active { background: #4ca7d0; }
+.color-button.gray { color: #252525; background: #ebebeb; }
+.color-button.gray:hover { color: #252525; background: rgba(235, 235, 235, 0.8); }
+.color-button.gray:active { color: #252525; background: rgba(235, 235, 235, 0.6); }
 .color-button.purple { background: #86246e; }
 .color-button.purple:hover { background: #96347e; }
 .color-button.purple:active { background: #76145e; }
@@ -478,9 +488,18 @@ li li li .exp-but { left: 60px; }
 
 .exp-line { position: absolute; top: 20px; left: 15px; border-left: 1px dotted #a1a1a1; height: 100%; z-index: 998; }
 
-li li .exp-line { left: 35px; }
+li li .exp-line { left: 35px; bottom: 19px; height: auto; }
 
 .exp-h-line { position: absolute; top: 50%; left: 36px; border-bottom: 1px dotted #a1a1a1; width: 16px; z-index: 998; }
+
+.hierarchical-list_mod li li > span { margin-left: 30px; }
+.hierarchical-list_mod .is-editable .textbox { height: 40px; width: 377px; }
+.hierarchical-list_mod .hierarchical-list__tools { float: right; margin-top: 7px; margin-right: 20px; position: relative; z-index: 1; height: 26px; line-height: 26px; }
+.hierarchical-list_mod .hierarchical-list__translate { margin: 5px 30px 0; }
+.hierarchical-list_mod .hierarchical-list__translaterow { padding-bottom: 5px; }
+.hierarchical-list_mod .hierarchical-list__translaterow a { font-size: 13px; margin-left: 10px; }
+.hierarchical-list_mod .hierarchical-list__translatelabel { display: inline-block; width: 60px; font-size: 13px; }
+.hierarchical-list_mod .hierarchical-list__add { padding: 15px 30px; font-size: 13px; background: white; }
 
 .popup-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.6); }
 
