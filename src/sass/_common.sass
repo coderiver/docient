@@ -530,6 +530,7 @@ a
 	&:hover
 		border-color: #135388
 
+
 .admincat
 	overflow: hidden
 	.overflow
@@ -538,6 +539,101 @@ a
 	.page-title-rblock
 		.simple
 			margin-right: 15px
+
+.admin-msg
+	overflow: hidden
+
+.adminbox
+	width: 741px
+	+r(w999)
+		width: 100%
+	.adminbox__row
+		+clr
+		margin-bottom: 10px
+		+r(w999)
+			margin-bottom: 0
+	.adminbox__col
+		float: left
+		margin-left: 10px
+		+clr
+		+r(w999)
+			float: none
+			margin-left: 0
+			margin-bottom: 10px
+		&:first-child
+			margin-left: 0
+		.textbox
+			margin: 0
+			vertical-align: top
+	.adminbox__label
+		display: block
+		margin-left: 5px
+		margin-bottom: 10px
+		font-size: 13px
+		&.adminbox__label_inline
+			display: inline-block
+			vertical-align: middle
+			margin-right: 10px
+			margin-bottom: 0
+			+r(w999)
+				display: block
+				margin-bottom: 10px
+		&.adminbox__label_send
+			float: left
+			margin-bottom: 0
+			height: 50px
+			line-height: 50px
+			+r(w999)
+				height: auto
+				line-height: 1
+				float: none
+				margin-bottom: 10px
+	.adminbox__select_send
+		float: right
+		+r(w999)
+			float: none
+			margin-bottom: 10px !important
+	.adminbox__uservisit
+		+r(w999)
+			float: left
+			width: 80% !important
+	.adminbox__uservisitdays
+		+r(w999)
+			float: right
+			display: inline-block !important
+			width: 16% !important
+	.adminbox__action
+		+clr
+		+r(w999)
+			text-align: center
+		.def-button
+			float: right
+			+r(w999)
+				float: none
+				margin-bottom: 10px
+			&:first-child
+				float: left
+				+r(w999)
+					float: none
+
+.msgpanel
+	+border-radius(15px)
+	overflow: hidden
+	border: 1px solid #d7d7d7
+	margin-bottom: 10px
+	.msgpanel__toolbar
+		+box-shadow(0 1px 0 rgba(158,158,158,.82))
+		background: #dfdfdf
+		+background-image(linear-gradient(bottom, #dfdfdf 0%, #fff 86.74%, #fff 100%))
+		padding: 12px 16px 3px
+	.msgpanel__content
+		padding: 25px
+	.msgpanel__text
+		height: 160px
+		font-size: 15px
+		p
+			margin-bottom: 1em
+	
 
 //*************
 //*	HELPERS
