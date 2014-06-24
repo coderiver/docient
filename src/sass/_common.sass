@@ -635,7 +635,108 @@ a
 		font-size: 15px
 		p
 			margin-bottom: 1em
+
+.search-page
+	overflow: hidden
+
+.stars
+	display: inline-block
+	vertical-align: middle
+	margin-right: 10px
+	// +r(w999)
+		// display: block
+		// margin: 5px 0
+	.fa
+		font-size: 21px
+		color: #bdbdbd
+		padding-right: 2px
+		cursor: pointer
+		&.is-active
+			color: #5cb7e0
+
+.btngroup
+	display: inline-block
+	vertical-align: middle
+	border: 1px solid #d7d7d7
+	+border-radius(15px)
+	padding: 2px
+	height: 50px
+	+box
+	font-size: 0
+	&.btngroup_wide
+		.btngroup__btn
+			padding: 0 29px
+	.btngroup__btn
+		height: 44px
+		line-height: 44px
+		padding: 0 25px
+		&.inactive
+			background: #fff
+			color: #4c4c4c
+
+.search
+	width: 735px
+	+r(w999)
+		width: 100%
+	.search__row
+		+clr
+		margin-bottom: 10px
+		+r(w999)
+			text-align: center
+		.fa-exchange
+			padding: 0 3px
+		.cfe-select
+			vertical-align: middle
+			margin-left: 10px
+			+r(w999)
+				margin-left: 0
 	
+	.search__colleft
+		display: inline-block
+		vertical-align: middle
+		min-height: 1px
+		width: 130px
+		font-weight: bold
+		+r(w999)
+			display: block
+			margin-bottom: 10px
+			text-align: center
+			width: 100%
+	.search__query
+		float: left
+	.search__note
+		position: relative
+		display: inline-block
+		font-size: 13px
+		color: #797979
+		padding-left: 23px
+		width: 137px
+		font-size: 12px
+		margin-left: 12px
+		// padding-top: 10px
+		+r(w999)
+			display: none
+			width: auto
+		.fa
+			position: absolute
+			top: 0
+			left: 0
+			font-size: 14px
+
+.location-field
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	+r(w999)
+		display: block
+	.textbox
+		padding: 0 15px 0 40px
+	.fa-location-arrow
+		position: absolute
+		top: 50%
+		margin-top: -9px
+		left: 15px
+		font-size: 18px
 
 //*************
 //*	HELPERS
@@ -1278,7 +1379,52 @@ textarea.textbox
 
 // d-tabs
 
-.d-tabs!
+.d-tabs
+	&.d-tabs_mod
+		.d-tabs-switches
+			margin-bottom: 0
+		.d-tabs-contents
+			padding: 0
+			section
+				padding: 0
+				position: relative
+			.d-tabs__sort
+				position: absolute
+				right: 0
+				top: -25px
+				+r(w999)
+					position: relative
+					text-align: right
+					top: auto
+					margin: 10px 0
+			.users-table
+				margin: 0
+				td, th
+					border-left: 1px solid #d7d7d7
+					vertical-align: middle
+					&:first-child
+						border-left: none
+					+r(w999)
+						border-left: none
+				.users-table__profilecompleted
+					width: 84px
+				.users-table__meta
+					.fa
+						color: #3a719d
+						font-size: 11px
+					.fa-exchange
+						color: #7a7a7a
+				.users-table__date
+					font-size: 13px
+			.title
+				margin-bottom: 0
+				a
+					font-weight: normal
+			.price
+				font-size: 24px
+				margin-bottom: 0
+			.rating
+				font-size: 13px
 
 .d-tabs-switches
 	border-bottom: 1px solid #d7d7d7
@@ -1325,6 +1471,15 @@ textarea.textbox
 	p
 		display: inline-block
 		margin-bottom: 0 !important
+
+.moreoffers
+	font-size: 20px
+	color: #252525
+	text-decoration: none
+	.fa
+		padding-left: 5px
+	&:hover
+		color: #000
 
 // custom-scroll
 
