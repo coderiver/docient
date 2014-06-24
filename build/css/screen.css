@@ -78,6 +78,7 @@ a:hover { color: #135388; }
 .userlogin .userlogin__colright { float: right; width: 197px; }
 @media only screen and (max-width: 999px) { .userlogin .userlogin__colright { float: none; width: 100%; } }
 .userlogin .userlogin__radios { font-size: 15px; color: white; min-width: 225px; float: right; }
+@media only screen and (max-width: 999px) { .userlogin .userlogin__radios label { max-width: 245px; display: inline-block; vertical-align: middle; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; } }
 .userlogin .userlogin__radios .checked + label { border-bottom: 1px dashed white; }
 @media only screen and (max-width: 999px) { .userlogin .userlogin__radios { float: none; width: auto; } }
 .userlogin .userlogin__submit { margin-top: 20px; }
