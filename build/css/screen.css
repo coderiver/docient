@@ -16,6 +16,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 body { font-family: "Open Sans", Arial, Helvetica, sans-serif; font-size: 13px; line-height: 1.2; color: #252525; cursor: default; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
+.authorization { background: url("../img/search-bg-pat.png"); }
+
 p, li { margin: 8px 0; }
 
 p:first-child { margin: 0 0 8px; }
@@ -54,6 +56,34 @@ a:hover { color: #135388; }
 .content table th, .content table td { padding: 10px 20px; border: 1px solid #e4e4e4; font-weight: normal; }
 .content table th { background: #fcfcfc; font-size: 14px; text-align: center; }
 .content table td { vertical-align: top; }
+
+.userlogin { *zoom: 1; padding: 55px 0; }
+.userlogin:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 999px) { .userlogin { width: 290px; margin: 0 auto; } }
+.userlogin .userlogin__info { float: left; width: 395px; margin-right: 45px; }
+@media only screen and (max-width: 999px) { .userlogin .userlogin__info { float: none; text-align: left; width: 100%; margin: 0 auto 30px; } }
+.userlogin .userlogin__info h1 { color: white; text-align: right; margin-bottom: 46px; }
+.userlogin .userlogin__info h1 strong { font-weight: 400; }
+@media only screen and (max-width: 999px) { .userlogin .userlogin__info h1 { text-align: left; margin-bottom: 20px; } }
+.userlogin .userlogin__form { float: left; width: 407px; margin-top: -10px; }
+.userlogin .userlogin__form .textbox { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+@media only screen and (max-width: 999px) { .userlogin .userlogin__form .textbox { margin: 0 0 10px; } }
+@media only screen and (max-width: 999px) { .userlogin .userlogin__form { float: none; width: 100%; } }
+@media only screen and (max-width: 999px) { .userlogin .def-button { margin: 5px 0; } }
+.userlogin .userlogin__row { margin: 13px 0; *zoom: 1; }
+.userlogin .userlogin__row:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 999px) { .userlogin .userlogin__row { margin: 0; } }
+.userlogin .userlogin__colleft { float: left; width: 197px; }
+@media only screen and (max-width: 999px) { .userlogin .userlogin__colleft { float: none; width: 100%; } }
+.userlogin .userlogin__colright { float: right; width: 197px; }
+@media only screen and (max-width: 999px) { .userlogin .userlogin__colright { float: none; width: 100%; } }
+.userlogin .userlogin__radios { font-size: 15px; color: white; min-width: 225px; float: right; }
+.userlogin .userlogin__radios .checked + label { border-bottom: 1px dashed white; }
+@media only screen and (max-width: 999px) { .userlogin .userlogin__radios { float: none; width: auto; } }
+.userlogin .userlogin__submit { margin-top: 20px; }
+@media only screen and (max-width: 999px) { .userlogin .userlogin__submit { margin-top: 10px; } }
+.userlogin .userlogin__sep { text-align: center; color: white; line-height: 1; margin: 5px 0; }
+@media only screen and (max-width: 999px) { .userlogin .userlogin__sep { margin: 10px 0; } }
 
 .newsurvey-btn { margin-top: 2px; margin-bottom: 15px; }
 
@@ -409,6 +439,9 @@ textarea.textbox { height: 86px; padding: 15px 15px; resize: vertical; overflow:
 .def-button.blue { background: #54b8dc; color: white; text-shadow: none; }
 .def-button.blue:hover { background: #6cc7f0; color: white; }
 .def-button.blue:active { background: #4ca7d0; color: white; }
+.def-button.def-button_openid { font-size: 13px; color: white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0; text-align: center; background: transparent; border: 2px solid white; line-height: 46px; box-shadow: none; }
+.def-button.def-button_openid .fa { font-size: 22px; padding-right: 8px; position: relative; top: -3px; }
+.def-button.def-button_openid:hover { background: white; color: #5cb7e0; }
 .def-button > .fa { font-size: 15px; height: 18px; vertical-align: middle; }
 
 .color-button { background: #3a719d; color: white; font-size: 14px; padding: 0 30px; }

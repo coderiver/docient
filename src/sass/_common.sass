@@ -48,6 +48,9 @@ body
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
 
+.authorization
+	background: url("../img/search-bg-pat.png")
+
 p, li
 	margin: 8px 0
 
@@ -139,6 +142,86 @@ a
 			text-align: center
 		td
 			vertical-align: top
+
+.userlogin
+	+clr
+	padding: 55px 0
+	+r(w999)
+		width: 290px
+		margin: 0 auto
+	.userlogin__info
+		float: left
+		width: 395px
+		margin-right: 45px
+		+r(w999)
+			float: none
+			text-align: left
+			width: 100%
+			margin: 0 auto 30px
+		h1
+			color: #fff
+			text-align: right
+			margin-bottom: 46px
+			strong
+				font-weight: 400
+			+r(w999)
+				text-align: left
+				margin-bottom: 20px
+	.userlogin__form
+		float: left
+		width: 407px
+		margin-top: -10px
+		.textbox
+			+box
+			+r(w999)
+				margin: 0 0 10px
+		+r(w999)
+			float: none
+			width: 100%
+	.def-button
+		+r(w999)
+			margin: 5px 0
+	.userlogin__row
+		margin: 13px 0
+		+clr
+		+r(w999)
+			margin: 0
+	.userlogin__colleft
+		float: left
+		width: 197px
+		+r(w999)
+			float: none
+			width: 100%
+	.userlogin__colright
+		float: right
+		width: 197px
+		+r(w999)
+			float: none
+			width: 100%
+
+	.userlogin__radios
+		font-size: 15px
+		color: #fff
+		min-width: 225px
+		float: right
+		.checked + label
+			border-bottom: 1px dashed white
+		+r(w999)
+			float: none
+			width: auto
+	.userlogin__submit
+		margin-top: 20px
+		+r(w999)
+			margin-top: 10px
+	.userlogin__sep
+		text-align: center
+		color: #fff
+		line-height: 1
+		margin: 5px 0
+		+r(w999)
+			margin: 10px 0
+
+
 
 .newsurvey-btn
 	margin-top: 2px
@@ -1072,6 +1155,24 @@ textarea.textbox
 		&:active
 			background: #4ca7d0
 			color: #fff
+	&.def-button_openid
+		font-size: 13px
+		color: #fff
+		+box
+		padding: 0
+		text-align: center
+		background: transparent
+		border: 2px solid #fff
+		line-height: 46px
+		box-shadow: none
+		.fa
+			font-size: 22px
+			padding-right: 8px
+			position: relative
+			top: -3px
+		&:hover
+			background: #fff
+			color: #5cb7e0
 	> .fa
 		font-size: 15px
 		height: 18px
