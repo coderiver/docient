@@ -1431,6 +1431,18 @@ textarea.textbox
 	font-weight: 300
 	border-radius: 15px
 	-webkit-border-radius: 15px
+	&.switch-option_mod
+		.selection-box
+			+gpu
+			width: 136px
+			+transition(all 200ms ease-out)
+		.options
+			a
+				width: 140px
+				+r(w999)
+					display: block
+					width: auto
+					+transition(all 100ms linear)
 	.options
 		display: block
 		position: relative

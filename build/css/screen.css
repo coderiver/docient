@@ -521,6 +521,9 @@ textarea.textbox { height: 86px; padding: 15px 15px; resize: vertical; overflow:
 .rating-blue .fa-star-o { color: #bdbdbd; }
 
 .switch-option { display: inline-block; position: relative; vertical-align: middle; height: 48px; width: auto; font-size: 14px; color: #252525; background: white; border: 1px solid #d7d7d7; font-weight: 300; border-radius: 15px; -webkit-border-radius: 15px; }
+.switch-option.switch-option_mod .selection-box { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); width: 136px; -webkit-transition: all 200ms ease-out; -moz-transition: all 200ms ease-out; -o-transition: all 200ms ease-out; transition: all 200ms ease-out; }
+.switch-option.switch-option_mod .options a { width: 140px; }
+@media only screen and (max-width: 999px) { .switch-option.switch-option_mod .options a { display: block; width: auto; -webkit-transition: all 100ms linear; -moz-transition: all 100ms linear; -o-transition: all 100ms linear; transition: all 100ms linear; } }
 .switch-option .options { display: block; position: relative; }
 .switch-option .options a { display: inline-block; height: 48px; width: 148px; cursor: pointer; line-height: 46px; text-align: center; color: #252525; transition: all 100ms linear; }
 .switch-option .options a .title { display: inline-block; line-height: 1.2; padding: 0 10px; vertical-align: middle; }
