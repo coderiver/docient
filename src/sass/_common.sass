@@ -1416,6 +1416,27 @@ textarea.textbox
 	.fa-star-o
 		color: #bdbdbd
 
+
+.contact-row
+	overflow: hidden
+	.add-another-phone
+		margin: 8px 0 0
+		+r(w999)
+			margin: 8px 0
+	.contact-col1
+		float: left
+		.textbox + .textbox
+			margin-top: 8px
+	.contact-col2
+		float: right
+	.contact-col1,
+	.contact-col2
+		width: 347px
+		+r(w999)
+			width: 100%
+			display: block
+			float: none
+
 // switch-option
 
 .switch-option
