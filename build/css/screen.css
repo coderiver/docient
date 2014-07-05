@@ -524,7 +524,7 @@ textarea.textbox { height: 86px; padding: 15px 15px; resize: vertical; overflow:
 .contact-row .add-another-phone { margin: 8px 0 0; }
 @media only screen and (max-width: 999px) { .contact-row .add-another-phone { margin: 8px 0; } }
 .contact-row .contact-col1 { float: left; }
-.contact-row .contact-col1 .textbox + .textbox { margin-top: 8px; }
+.contact-row .contact-input .textbox + .textbox { margin-top: 8px; }
 .contact-row .contact-col2 { float: right; }
 .contact-row .contact-col1, .contact-row .contact-col2 { width: 347px; }
 @media only screen and (max-width: 999px) { .contact-row .contact-col1, .contact-row .contact-col2 { width: 100%; display: block; float: none; } }
