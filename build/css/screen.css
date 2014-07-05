@@ -520,6 +520,9 @@ textarea.textbox { height: 86px; padding: 15px 15px; resize: vertical; overflow:
 .rating-blue .fa { padding: 0 3px; }
 .rating-blue .fa-star-o { color: #bdbdbd; }
 
+.js-login-tab1, .js-login-tab2 { display: none; }
+.js-login-tab1.is-active, .js-login-tab2.is-active { display: block; }
+
 .contact-row { overflow: hidden; }
 .contact-row .add-another-phone { margin: 8px 0 0; }
 @media only screen and (max-width: 999px) { .contact-row .add-another-phone { margin: 8px 0; } }
