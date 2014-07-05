@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+	$(function() {
+    $( "#datepicker" ).datepicker({
+    	showOtherMonths: true,
+    	firstDay: 1,
+    	minDate: 0
+    });
+  });
+
 	$(".js-clone-btn").click(function() {   
 	       var $div = $(this).parent().find('.contact-input');
 	       $div.find("input")

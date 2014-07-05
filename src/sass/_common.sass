@@ -1126,6 +1126,79 @@ textarea.textbox
 	button
 		cursor: pointer
 
+
+.dpicker
+	font-family: "Open Sans", Arial, Helvetica, sans-serif
+	.ui-datepicker-inline
+		border: none
+		padding: 0
+		background: #fff
+	.ui-datepicker-header
+		background: #58b9d9
+		background: url("../img/search-bg-pat.png")
+		border: none
+		+border-radius(0)
+	.ui-datepicker-title
+		color: #fff
+		text-transform: uppercase
+		font-weight: normal
+		font-size: 15px
+	.ui-datepicker-calendar
+		text-align: center
+		th
+			color: #787878
+			font-weight: normal
+			font-size: 13px
+		td
+			padding: 0
+	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+		background: none
+		border: none
+		color: #3373a8
+		text-align: center
+		padding: 0
+		width: 33px
+		height: 33px
+		line-height: 33px
+		font-size: 12px
+		&.ui-state-active
+			background: #5cb7e0
+			color: #fff
+			+border-radius(50%)
+	.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next
+		width: auto
+		height: auto
+		&:hover
+			background: none
+			border: none
+	.ui-datepicker .ui-datepicker-next span,
+	.ui-datepicker .ui-datepicker-prev span
+		position: static
+		margin: 0
+		cursor: pointer
+	.ui-datepicker .ui-datepicker-prev
+		left: 10px
+		top: 9px
+	.ui-datepicker .ui-datepicker-next
+		right: 10px
+		top: 9px
+	.ui-datepicker .ui-datepicker-next span
+		+s(dtp_next)
+		// right: 10px
+
+	.ui-datepicker .ui-datepicker-prev span
+		+s(dtp_prev)
+		// left: 10px
+	.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled
+		opacity: 1
+		span
+			color: #a3a3a3 !important
+			+nosel
+	// .ui-datepicker-other-month,
+	// .ui-datepicker-unselectable .ui-state-disabled
+	// 	span
+	// 		color: #a3a3a3 !important
+
 //*************
 //*	BUTTONS
 //***************
