@@ -79,6 +79,7 @@ a:hover { color: #135388; }
 .userlogin .userlogin__colright { float: right; width: 197px; }
 @media only screen and (max-width: 999px) { .userlogin .userlogin__colright { float: none; width: 100%; } }
 .userlogin .userlogin__radios { font-size: 15px; color: white; min-width: 225px; float: right; }
+.userlogin .userlogin__radios label { cursor: pointer; }
 @media only screen and (max-width: 999px) { .userlogin .userlogin__radios label { max-width: 245px; display: inline-block; vertical-align: middle; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; } }
 .userlogin .userlogin__radios .checked + label { border-bottom: 1px dashed white; }
 @media only screen and (max-width: 999px) { .userlogin .userlogin__radios { float: none; width: auto; } }
@@ -104,6 +105,9 @@ a:hover { color: #135388; }
 @media only screen and (max-width: 999px) { .btngroup .def-button { float: none; margin-bottom: 10px; } }
 .btngroup .def-button:first-child { float: left; }
 @media only screen and (max-width: 999px) { .btngroup .def-button:first-child { float: none; } }
+
+.useragree { text-align: center; margin-bottom: 15px; }
+.useragree label { cursor: pointer; }
 
 .userdetails .userdetails__title { margin-bottom: 30px; }
 .userdetails .userdetails__title span { display: inline-block; vertical-align: middle; font-size: 17px; color: white; width: 39px; height: 39px; line-height: 39px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; background-color: #ffb300; text-align: center; margin-right: 10px; }
@@ -671,6 +675,7 @@ li li .exp-line { left: 35px; bottom: 19px; height: auto; }
 .popup-window h1 { font-size: 32px; }
 
 .popup-radios { padding: 20px 25px; font-size: 14px; }
+.popup-radios label { cursor: pointer; }
 .popup-radios .checked + label { border-bottom: 1px dashed white; }
 
 html { height: 100%; background: white; }
@@ -872,6 +877,8 @@ nav + #main-inner { margin-left: 200px; }
 .proc-date-options-table td { padding: 8px 20px 8px 0; }
 .proc-date-options-table th { padding-bottom: 12px; }
 .proc-date-options-table td { vertical-align: middle; }
+.proc-date-options-table tr > td { cursor: pointer; }
+.proc-date-options-table tr > td label { cursor: pointer; }
 
 .add-clinic-block { width: 704px; }
 
@@ -1199,6 +1206,13 @@ nav + #main-inner { margin-left: 200px; }
   .content table th:first-child, .content table td:first-child { border-top: none !important; }
   .content table th { background: #efefef; font-size: 14px; text-align: center; border-top: 1px solid #e4e4e4; }
   .content table td { vertical-align: top; } }
+.js-hierarchlist .js-hierarchlist-item > .hierarchical-list__translate { display: none; }
+.js-hierarchlist .js-hierarchlist-item > .js-hierarchlist-tools .js-hierarchlist-save { display: none; }
+.js-hierarchlist .js-hierarchlist-item > .js-hierarchlist-tools .js-hierarchlist-edit { display: inline-block; }
+.js-hierarchlist .js-hierarchlist-item.is-editable > .hierarchical-list__translate { display: block; }
+.js-hierarchlist .js-hierarchlist-item.is-editable > .js-hierarchlist-tools .js-hierarchlist-save { display: inline-block; }
+.js-hierarchlist .js-hierarchlist-item.is-editable > .js-hierarchlist-tools .js-hierarchlist-edit { display: none; }
+
 .userinfo { padding-top: 0; }
 .userinfo .userinfo__pic { display: inline-block; vertical-align: middle; margin-right: 15px; }
 .userinfo .userinfo__meta { display: inline-block; vertical-align: middle; }

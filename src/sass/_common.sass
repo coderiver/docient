@@ -208,6 +208,7 @@ a
 		min-width: 225px
 		float: right
 		label
+			cursor: pointer
 			+r(w999)
 				max-width: 245px
 				display: inline-block
@@ -274,6 +275,12 @@ a
 			float: left
 			+r(w999)
 				float: none
+
+.useragree
+	text-align: center
+	margin-bottom: 15px
+	label
+		cursor: pointer
 
 .userdetails
 	.userdetails__title
@@ -1922,6 +1929,8 @@ li li .exp-line
 .popup-radios
 	padding: 20px 25px
 	font-size: 14px
+	label
+		cursor: pointer
 	.checked + label
 		border-bottom: 1px dashed #ffffff
 
@@ -2612,6 +2621,10 @@ nav
 		padding-bottom: 12px
 	td
 		vertical-align: middle
+	tr>td
+		cursor: pointer
+		label
+			cursor: pointer
 
 // ADD CLINIC
 
@@ -3770,3 +3783,23 @@ nav
 			border-top: 1px solid #e4e4e4
 		td
 			vertical-align: top
+
+
+.js-hierarchlist
+	.js-hierarchlist-item
+		& > .hierarchical-list__translate
+			display: none
+		& > .js-hierarchlist-tools
+			.js-hierarchlist-save
+				display: none
+			.js-hierarchlist-edit
+				display: inline-block
+		&.is-editable
+			& > .hierarchical-list__translate
+				display: block
+			& > .js-hierarchlist-tools
+				.js-hierarchlist-save
+					display: inline-block
+				.js-hierarchlist-edit
+					display: none
+

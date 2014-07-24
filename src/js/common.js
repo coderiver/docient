@@ -33,6 +33,22 @@ $(document).ready(function(){
 		}
 	});
 
+	$('.proc-date-options-table td').on('click', function() {
+		// $(this).find('label').addClass('ololo');
+		$(this).siblings().find('.cfe-radio').trigger('click');
+		// $(this).find('.cfe-radio').addClass('checked');
+		// alert('ok');
+	});
+
+	$('.js-hierarchlist-save').on('click', function() {
+		$(this).parent().parent().removeClass('is-editable');
+		return false;
+	});
+
+	$('.js-hierarchlist-edit').on('click', function() {
+		$(this).parent().parent().addClass('is-editable');
+		return false;
+	});
 
 
 });
