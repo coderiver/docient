@@ -1213,10 +1213,10 @@ nav + #main-inner { margin-left: 200px; }
 .js-hierarchlist .js-hierarchlist-item.is-editable > .js-hierarchlist-tools .js-hierarchlist-save { display: inline-block; }
 .js-hierarchlist .js-hierarchlist-item.is-editable > .js-hierarchlist-tools .js-hierarchlist-edit { display: none; }
 
-.list { font-size: 14px; }
+.list { font-size: 13px; }
 .list li { position: relative; padding-left: 11px; }
 .list li:before { content: ""; position: absolute; left: 0; top: 4px; width: 0px; height: 0px; border-style: solid; border-width: 4px 0 4px 5px; border-color: transparent transparent transparent black; }
-.list_small { font-size: 12px; }
+.list_big { font-size: 15px; }
 
 .date { display: block; font-size: 12px; color: #a0a0a0; }
 .date .fa { margin-right: 4px; }
